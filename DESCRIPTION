@@ -1,0 +1,32 @@
+Package: retestR
+Title: Model-Based Anomaly Detection for Repeat Test-Takers
+Version: 0.1.0
+Authors@R: person("Daniel", "Edi", email = "danieledi2026@gmail.com", role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0001-5475-819X"))
+Description: Flags repeat test-takers whose second-attempt performance departs
+    from what a growth model predicts, using independent evidence sources:
+    model-expected score gain (accounting for regression to the mean, time
+    between attempts and remediation), differential performance on exposed
+    versus new items (Sinharay, 2017, <doi:10.3102/1076998616673872>), and
+    differential response speed under a lognormal response-time model (van
+    der Linden, 2006, <doi:10.3102/10769986031002181>). Evidence is combined
+    into a risk index calibrated by parametric bootstrap under the
+    no-misconduct model, so flagging thresholds carry explicit false-positive
+    rates.
+License: MIT + file LICENSE
+URL: https://github.com/edidatasolutions/retestR,
+        https://edidatasolutions.github.io/retestR/
+BugReports: https://github.com/edidatasolutions/retestR/issues
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports: stats, utils
+Suggests: knitr, markdown
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: no
+Packaged: 2026-09-28 00:33:21 UTC; User
+Author: Daniel Edi [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0001-5475-819X>)
+Maintainer: Daniel Edi <danieledi2026@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-08 09:10:07 UTC
